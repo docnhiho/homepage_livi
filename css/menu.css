@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.menu-dropdown {
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-around;
+
+}
+
+.menu-dropdown .icon {
+    display: none;
+}
+
+.menu-dropdown li a,
+.dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-dropdown li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.menu-dropdown li.dropdown {
+    display: inline-block;
+}
+
+.menu-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-dropdown .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+
+}
+
+.menu-dropdown .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropmenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropmenu li {
+    list-style: none;
+    padding: 14px;
+}
+
+.dropmenu {
+    display: none;
+    position: absolute;
+    right: 0rem;
+    top: 60px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dropmenu.open{
+    height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropmenu a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .menu-dropdown {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu .icon {
+        display: block;
+    }
+    .dropmenu{
+        display: block;
+    }
+}
+
+
+
+/* @media screen and (max-width: 600px) {
+    .menu {
+        display: flex;
+        background-color: blue;
+        justify-content: space-around;
+
+    }
+}
