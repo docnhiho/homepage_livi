@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    
+}
+.cover{
+    filter: alpha(opacity=50);
+    opacity: 0.5
+}
 
 li {
     list-style: none;

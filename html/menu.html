@@ -10,53 +10,51 @@
 </head>
 
 <body>
-    <div class="menu">
-        <ul class="menu-dropdown" id="myMenu">
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Menu 1</a>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Menu 2</a>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Menu 3</a>
-            </li>
-            <li class="dropdown1">
-                <a href="#" class="icon">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </li>
-        </ul>
-        <div class="dropmenu">
-            <li><a href="#">Menu 1</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 3</a></li>F
-            <li><a href="#">Menu 4</a></li>
+    <div class="container cover">
+        <div class="menu">
+            <ul class="menu-dropdown" id="myMenu">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu 1</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu 2</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu 3</a>
+                </li>
+                <li class="dropdown1">
+                    <a href="#" class="icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="dropmenu">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </div>
         </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aliquam id veniam tenetur, velit nesciunt iure
+        ea ex eum omnis magni minima maiores tempore, in debitis voluptates quo delectus repellendus.
     </div>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere provident magni earum amet maxime officia
-    perferendis. Blanditiis, accusamus! Odio ipsum, atque illo minima esse nisi et officia dolore provident numquam?
+
+
     <script>
         const btn = document.querySelector('.dropdown1')
-        const btnIcon = document.querySelector('.icon')
         const dropMenu = document.querySelector('.dropmenu')
-
         btn.onclick = function () {
             dropMenu.classList.toggle('open')
             const isOpen = dropMenu.classList.contains('open')
-
-            // btnIcon.classList = isOpen ?
-            // "fa-solid fa-xmark":
-            // "fa-solid fa-bars"
         }
     </script>
 </body>
